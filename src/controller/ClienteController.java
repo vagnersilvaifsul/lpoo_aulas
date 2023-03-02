@@ -41,6 +41,7 @@ public class ClienteController {
         System.out.println("Map");
         System.out.println(clientesM);
         //pesquisa
+        System.out.println("Map Pesquisa");
         System.out.println(clientesM.get(c2.getId()));
 
 
