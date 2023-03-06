@@ -14,6 +14,7 @@ public class ClienteController {
         //Array (ArrayList)
 
         //criar e popular a List
+        System.out.println("\n******************** Criação ********************");
         List<Cliente> clientes = new ArrayList<>();
         clientes.add(c1);
         Cliente c2 = new Cliente(2L, "Rafael", "Silva");
@@ -24,6 +25,7 @@ public class ClienteController {
         System.out.println(clientes);
 
         //ordenação
+        System.out.println("\n******************** Ordenação ********************");
         Collections.reverse(clientes);
         System.out.println("\nOrdena com Collections.reverse");
         System.out.println(clientes);
@@ -33,35 +35,44 @@ public class ClienteController {
         Collections.sort(clientes, Comparator.comparing(Cliente::getNome));
         System.out.println("\nOrdena com Collections.sort");
         System.out.println(clientes);
+        //ou utiliza como prefixo da chamada a própria coleção
+        System.out.println("\nou");
+        clientes.sort(Comparator.comparing(Cliente::getNome).reversed());
+        System.out.println(clientes);
 
         //pesquisa
+        System.out.println("\n******************** Pesquisa ********************");
         System.out.print("\nPesquisa com contains= ");
         System.out.println(clientes.contains(new Cliente(1L, "Rafael", "Silva")));
-        //pesquisa por força bruta
+        //pesquisa por força bruta (evite seu uso)
         /*
-            O ideal seria utilizar a pesquisa binária, porém, ao utilizar Collections, padrão Java7,
-            a classe de modelo deveria implementar Comparable, assundo a ser tratado em Herança.
-            A dica aqui é utilizar stream (programação funcional), que já é mais recente, do Java8 em diante.
+            O ideal é utilizar a pesquisa binária, pois, o algoritmo é otimizado para pesquisa.
          */
         clientes.forEach(c -> {
             if(c.getId() == 1L){
                 System.out.println("\nPesquisa por força bruta: " + c);
             }
         });
-        //pesquisa binária
-        /*
-            Para ela funcionar a classe de modelo deveria implementar Comparable. Assunto de herança.
-         */
-        //Collections.binarySearch(clientes, 1L);
+        //pesquisa binária (Dê preferencia para esse tipo de pesquisa ao invés da pesquisa por força bruta)
+        System.out.print("\nCollections.binarySearch");
+        System.out.println(
+            clientes.get(
+                Collections.binarySearch(
+                    clientes,
+                    new Cliente(3L, "Francisca", "Santos"),
+                    Comparator.comparing(Cliente::getId)
+                )
+            )
+        );
 
         //criar e popular a Map
-        Map<Long, Cliente> clientesM = new HashMap();
+        Map<Long, Cliente> clientesM = new HashMap<>();
         clientesM.put(c1.getId(), c1);
         clientesM.put(c2.getId(), c2);
         System.out.println("\nMap");
         System.out.println(clientesM);
         //pesquisa
-        System.out.println("\nMap Pesquisa");
+        System.out.print("\nMap Pesquisa");
         System.out.println(clientesM.get(c2.getId()));
 
 
