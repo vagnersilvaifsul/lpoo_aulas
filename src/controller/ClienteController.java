@@ -37,12 +37,12 @@ public class ClienteController {
         System.out.println(clientes);
         //ou utiliza como prefixo da chamada a própria coleção
         System.out.println("\nou");
-        clientes.sort(Comparator.comparing(Cliente::getNome).reversed());
+        clientes.sort(Comparator.comparing(Cliente::getNome).reversed()); //cria uma stream e usa o predicado como critério
         System.out.println(clientes);
 
         //pesquisa
         System.out.println("\n******************** Pesquisa ********************");
-        System.out.print("\nPesquisa com contains= ");
+        System.out.print("\nPesquisa com contains= "); //é preciso implementar equals e hashcode
         System.out.println(clientes.contains(new Cliente(1L, "Rafael", "Silva")));
         //pesquisa por força bruta (evite seu uso)
         /*
@@ -60,10 +60,17 @@ public class ClienteController {
                 Collections.binarySearch(
                     clientes,
                     new Cliente(3L, "Francisca", "Santos"),
-                    Comparator.comparing(Cliente::getId)
+                    Comparator.comparing(Cliente::getNome)
                 )
             )
         );
+        System.out.print("\nUtilizando Stream, com clientes.stream()");
+        System.out.print("\nLocalizando um cliente pela chave de pesquisa (nome=Francisca) na coleção do tipo List: ");
+        Cliente clienteFind =
+            clientes.stream()
+                .filter(c -> c.getNome().equals("Francisca"))
+                .findAny().orElse(null);
+        System.out.println(clienteFind);
 
         //criar e popular a Map
         Map<Long, Cliente> clientesM = new HashMap<>();
