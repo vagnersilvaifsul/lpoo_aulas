@@ -18,6 +18,8 @@ public class ClienteController {
         clientes.add(c1);
         Cliente c2 = new Cliente(2L, "Rafael", "Silva");
         clientes.add(c2);
+        Cliente c3 = new Cliente(3L, "Francisca", "Santos");
+        clientes.add(c3);
         System.out.println("\nList");
         System.out.println(clientes);
 
@@ -27,6 +29,9 @@ public class ClienteController {
         System.out.println(clientes);
         Collections.shuffle(clientes);
         System.out.println("\nOrdena com Collections.shuffle (embaralha a collection)");
+        System.out.println(clientes);
+        Collections.sort(clientes, Comparator.comparing(Cliente::getNome));
+        System.out.println("\nOrdena com Collections.sort");
         System.out.println(clientes);
 
         //pesquisa
