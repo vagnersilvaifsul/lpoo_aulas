@@ -31,7 +31,7 @@ public class Main {
 
         /*
             Passo 2:
-            Depois para contrastar eu criei uma variável do TIPO DO PROGRAMADOR. Bom, ela não existia, então eu tive que utilizar o meu conhecimento do
+            Depois, para contrastar, eu criei uma variável do TIPO DO PROGRAMADOR. Bom, ela não existia, então eu tive que utilizar o meu conhecimento do
             PARADIGMA DA ORIENTAÇÃO A OBJETO (POO) para resolver o problema.
             Como eu resolvi? Eu criei uma class e dei o nome a ela de Pessoa, o tipo que eu coloquei ao declarar a variável, assim:
                 Pessoa pessoa1 = new Pessoa();
@@ -59,7 +59,7 @@ public class Main {
 
         /*
             Passo 3:
-            Eu mostrei para vocês um slide com o FLUXO PARA CRIAÇÃO DE CLASSES NO POO, que está em https://jamboard.google.com/d/1VX7nWix_bsvesu3t589rDAsryF-PsAFKZscC-HIKawg/viewer?pli=1
+            Eu mostrei para vocês um slide com o FLUXO PARA CRIAÇÃO DE CLASSES NO POO, que está em https://drive.google.com/file/d/15A3yjncdNM1BLHkNyVFOjwdaXd-jTfQb/view?usp=sharing
             Note que essas etapas compreendem:
             1. Identificar um conjunto de objetos que contém características comuns, como Automóvel no exemplo;
             2. Modelar esses objetos em uma class (para modelar uma classe se utiliza o Diagrama de Classes da UML);
