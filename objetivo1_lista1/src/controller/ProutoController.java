@@ -2,25 +2,26 @@ package controller;
 
 import model.Produto;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class ProutoController {
     public static void main(String[] args) {
         //C.i.
         Produto p1 = new Produto();
+        p1.setId(1);
         Produto p2 = new Produto();
+        p2.setId(2);
         p2.setNome("Açúcar");
 
         //C.ii.
-        Produto p3 = new Produto("Arroz", "Arroz Ceolin 5kg tipo1 longo", 21.90, 1000);
-        Produto p4 = new Produto("Feijão", "Feijão Tordilho 1kg tipo1 longo", 6.90, 5000);
+        Produto p3 = new Produto(3,"Arroz", "Arroz Ceolin 5kg tipo1 longo", 21.90, 1000);
+        Produto p4 = new Produto(4, "Feijão", "Feijão Tordilho 1kg tipo1 longo", 6.90, 5000);
 
         //C.iii.
         Produto p5 = new Produto("Café", 21.90);
+        p5.setId(5);
         Produto p6 = new Produto("Café", 21.90);
+        p6.setId(6);
 
         //C.iv
         System.out.println("Olá " + "mundo.");
@@ -49,8 +50,12 @@ public class ProutoController {
         produtosList.add(p4);
         produtosList.add(p5);
         produtosList.add(p6);
+        produtosList.add(p6);
+        produtosList.add(p6);
+        produtosList.add(p6);
 
         //2a. Operação de impressão da coleção
+        System.out.println("******** List ******");
         System.out.println(produtosList);
 
         //3a. Operação de ordenação
@@ -95,5 +100,28 @@ public class ProutoController {
         System.out.println("\nSaída da pesquisa binária");
         System.out.print(produtosList.get(indiceProduto));
 
+
+        /* Coleções do tipo Map */
+        //List<Produto> produtosList = new ArrayList<>();
+        Map<Integer, Produto> produtosMap = new HashMap<>();
+        //1a. Operacão adição de objetos na List
+        produtosMap.put(p1.getId(), p1);
+        produtosMap.put(p2.getId(), p2);
+        produtosMap.put(p3.getId(), p3);
+        produtosMap.put(p4.getId(), p4);
+        produtosMap.put(p5.getId(), p5);
+        produtosMap.put(p6.getId(), p6);
+        produtosMap.put(p6.getId(), p6);
+        produtosMap.put(p6.getId(), p6);
+        produtosMap.put(p6.getId(), p6);
+        System.out.println("******** Map ******");
+        System.out.println(produtosMap);
+
+        //Pesquisa em Map
+        System.out.println("Objeto de id=5");
+        System.out.println(produtosMap.get(p5.getId()));
+
+        //Ordenação é proibida num Map
+        //produtosMap.sort
     }
 }

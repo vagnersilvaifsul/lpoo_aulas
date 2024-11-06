@@ -3,6 +3,7 @@ package model;
 public class Produto {
 
     //Atributos
+    private int id;
     private String nome;
     private String descricao;
     private double valor;
@@ -14,7 +15,8 @@ public class Produto {
     public Produto() {
     }
 
-    public Produto(String nome, String descricao, double valor, int estoque) {
+    public Produto(int id, String nome, String descricao, double valor, int estoque) {
+        this.id = id;
         this.nome = nome;
         this.descricao = descricao;
         this.valor = valor;
@@ -27,6 +29,14 @@ public class Produto {
     }
 
     //Setters e o Getters
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -62,7 +72,8 @@ public class Produto {
     @Override
     public String toString() {
         return "\nProduto{" +
-                "nome='" + nome + '\'' +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
                 ", descricao='" + descricao + '\'' +
                 ", valor=" + valor +
                 ", estoque=" + estoque +
