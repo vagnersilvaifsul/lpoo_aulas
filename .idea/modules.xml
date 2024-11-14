@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/lpoo_aulas.iml" filepath="$PROJECT_DIR$/lpoo_aulas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/objetivo1_lista1/objetivo1_lista1.iml" filepath="$PROJECT_DIR$/objetivo1_lista1/objetivo1_lista1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/semana1/semana1.iml" filepath="$PROJECT_DIR$/semana1/semana1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/semana2/semana2.iml" filepath="$PROJECT_DIR$/semana2/semana2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/semana4_heranca_simples/semana4_heranca_simples.iml" filepath="$PROJECT_DIR$/semana4_heranca_simples/semana4_heranca_simples.iml" />
+    </modules>
+  </component>
+</project>
