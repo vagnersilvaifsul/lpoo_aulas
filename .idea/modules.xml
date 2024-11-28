@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/semana1/semana1.iml" filepath="$PROJECT_DIR$/semana1/semana1.iml" />
       <module fileurl="file://$PROJECT_DIR$/semana2/semana2.iml" filepath="$PROJECT_DIR$/semana2/semana2.iml" />
       <module fileurl="file://$PROJECT_DIR$/semana4_heranca_simples/semana4_heranca_simples.iml" filepath="$PROJECT_DIR$/semana4_heranca_simples/semana4_heranca_simples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/semana4_list1_heranca_simples/semana4_list1_heranca_simples.iml" filepath="$PROJECT_DIR$/semana4_list1_heranca_simples/semana4_list1_heranca_simples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/semana5/semana5.iml" filepath="$PROJECT_DIR$/semana5/semana5.iml" />
     </modules>
   </component>
 </project>
