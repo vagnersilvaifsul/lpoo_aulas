@@ -117,11 +117,14 @@ public class FuncionarioController {
         });
 
         //solução da Lista 1
-        //Declarando um objeto (uma variável)  do tipo List (ou ArrayList)
+        //Declarando um objeto (uma variável) do tipo List (ou ArrayList)
         //2a
         List<Funcionario> funcionarioList2 = new ArrayList<>();
+
         //2b está na classe de modelo
-        //2c está na criação ou manutenção dos dos objetos neste controlador
+
+        //2c está na criação ou manutenção dos objetos neste controlador
+
         //2d
         //adicionando objetos à coleção
         funcionarioList2.add(f1);
@@ -130,13 +133,16 @@ public class FuncionarioController {
         funcionarioList2.add(f4);
         funcionarioList2.add(f5);
         funcionarioList2.add(f6);
+
         //2e
         //imprime a coleção
         System.out.println("Imprimindo a coleção do tipo List");
         System.out.println(funcionarioList2);
+
         //2f
         funcionarioList2.sort(Comparator.comparing(Funcionario::getId).reversed());
         System.out.println(funcionarioList2);
+
         //2g
         //pesquisa por força bruta
         //abordagem com forEach do Java 7+
@@ -171,11 +177,42 @@ public class FuncionarioController {
         funcionarioMap.put(f5.getId(), f5);
         funcionarioMap.put(f6.getId(), f6);
         System.out.println(funcionarioMap);
+
         //2. Ordenação
         //O Map não permite ordenação
+
         //3. Pesquisa
         System.out.println("\n\n");
         System.out.println("Pesquisa na coleção do tipo Map");
         System.out.println(funcionarioMap.get(f3.getId()));
+
+
+        /*
+
+            Como saber se dois objetos são iguais?
+
+            Uso dos métodos equals e do hashCode.
+
+            O equals serve para comparar dois objetos.
+
+            O hashCode é uma propriedade que identifica o objeto de forma inequívoca.
+
+            Por padrão, a classe Object gera o hashCode como um número inteiro identificador do objeto.
+            A cada nova execução esse número é recalculado, mas, ele é o mesmo durante toda a execução.
+            O hashCode e o equals podem ser implementados na classe, variando a chave que identifica o objeto.
+
+         */
+        Funcionario tf1 = new Funcionario(21, "Ana", 21000.00);
+        Funcionario tf2 = new Funcionario(21, "Ana", 21000.00);
+        if(tf1.equals(tf2)){
+            System.out.println("tf1 = tf2");
+            System.out.println(tf1.hashCode());
+            System.out.println(tf2.hashCode());
+        } else {
+            System.out.println("tf1 != tf2");
+            System.out.println(tf1.hashCode());
+            System.out.println(tf2.hashCode());
+        }
     }
+
 }
