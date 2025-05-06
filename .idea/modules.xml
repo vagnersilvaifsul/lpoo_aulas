@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/lpoo_aulas.iml" filepath="$PROJECT_DIR$/lpoo_aulas.iml" />
       <module fileurl="file://$PROJECT_DIR$/objetivo1_lista1/objetivo1_lista1.iml" filepath="$PROJECT_DIR$/objetivo1_lista1/objetivo1_lista1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/objetivo1e2_preparatorio/objetivo1e2_preparatorio.iml" filepath="$PROJECT_DIR$/objetivo1e2_preparatorio/objetivo1e2_preparatorio.iml" />
       <module fileurl="file://$PROJECT_DIR$/objetivo2_heranca_multipla/objetivo2_heranca_multipla.iml" filepath="$PROJECT_DIR$/objetivo2_heranca_multipla/objetivo2_heranca_multipla.iml" />
       <module fileurl="file://$PROJECT_DIR$/objetivo2_heranca_simples_lista1/objetivo2_heranca_simples_lista1.iml" filepath="$PROJECT_DIR$/objetivo2_heranca_simples_lista1/objetivo2_heranca_simples_lista1.iml" />
       <module fileurl="file://$PROJECT_DIR$/objetivo2_lista2_heranca_multipla/objetivo2_lista2_heranca_multipla.iml" filepath="$PROJECT_DIR$/objetivo2_lista2_heranca_multipla/objetivo2_lista2_heranca_multipla.iml" />
