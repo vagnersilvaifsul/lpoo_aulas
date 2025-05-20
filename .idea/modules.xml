@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/avaliacao_o1_o2_correcao_em_aula/avaliacao_o1_o2_correcao_em_aula.iml" filepath="$PROJECT_DIR$/avaliacao_o1_o2_correcao_em_aula/avaliacao_o1_o2_correcao_em_aula.iml" />
       <module fileurl="file://$PROJECT_DIR$/lpoo_aulas.iml" filepath="$PROJECT_DIR$/lpoo_aulas.iml" />
       <module fileurl="file://$PROJECT_DIR$/objetivo1_lista1/objetivo1_lista1.iml" filepath="$PROJECT_DIR$/objetivo1_lista1/objetivo1_lista1.iml" />
       <module fileurl="file://$PROJECT_DIR$/objetivo1e2_preparatorio/objetivo1e2_preparatorio.iml" filepath="$PROJECT_DIR$/objetivo1e2_preparatorio/objetivo1e2_preparatorio.iml" />
