@@ -4,9 +4,9 @@ import java.util.List;
 
 public class Atua {
     //associação com Ator e Filme
-    Ator ator;
-    Filme filme;
+    private Ator ator;
+    private Filme filme;
 
     //Registra a ocorrencia da associação com Ator e Filme
-    String PapelAtorFilme;
+    private String papelAtorFilme;
 }
